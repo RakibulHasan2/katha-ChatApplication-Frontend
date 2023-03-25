@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import logo from '../../Images/Kathā.png'
-import './SignUp.css'
+
 const SignUp = () => {
     const [error, setError] = useState(null)
     const [values, setValues] = useState({
@@ -38,7 +38,7 @@ const SignUp = () => {
         // }
     };
     return (
-        <div className='flex justify-center h-screen items-center bg-slate-300'>
+        <div className='flex justify-center h-screen items-center bg-slate-800'>
             <div className='border rounded-3xl bg-slate-600 px-16 py-7'>
                 <img style={{ width: '300px', height: '200px' }} src={logo} alt="" />
                 <div className=''>
