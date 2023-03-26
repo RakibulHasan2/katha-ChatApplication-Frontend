@@ -51,7 +51,6 @@ const SetAvatar = () => {
                 const image = await axios.get(
                     `${api}/${Math.round(Math.random() * 1000)}`
                 );
-                console.log(image.data)
                 const buffer = new Buffer(image.data);
                 data.push(buffer.toString("base64"));
             }
@@ -60,16 +59,14 @@ const SetAvatar = () => {
         }
         fetchData();
     }, []);
-
-
     return (
-        <div style={{ height: '100vh', backgroundColor: '#131324' }} className="flex justify-center items-center flex-col">
+        <div>
             {isLoading ? (
                 <div className="flex justify-center">
-                    <img src={loader} alt="loader" className="loader" />
+                    <img src={loader} alt="loader" className="" />
                 </div>
             ) :
-                <div className="">
+                <div style={{ height: '100vh', backgroundColor: '#131324' }} className="flex justify-center items-center flex-col">
                     <div className="title-container text-white">
                         <h1 className="text-center text-3xl font-bold mb-5">Pick an Avatar as your profile picture</h1>
                     </div>

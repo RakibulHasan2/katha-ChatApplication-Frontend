@@ -18,6 +18,7 @@ const Login = () => {
 
     const handleValidation = () => {
         const { username, password } = values;
+        console.log(username)
         if (username === "") {
             toast.error("User name is required.");
             return false;
@@ -29,7 +30,7 @@ const Login = () => {
     };
     const handleChange = (event) => {
         setValues({ ...values, [event.target.name]: event.target.value });
-        // console.log()
+        console.log(values)
     };
 
     const handleSubmit = async (event) => {
@@ -62,7 +63,7 @@ const Login = () => {
                         <div className='mb-3'>
                             <input className='outline-sky-800 p-2 w-full rounded-lg '
                                 type="text"
-                                name='name'
+                                name='username'
                                 placeholder='User Name'
                                 onChange={(e) => handleChange(e)}
                             />

@@ -14,11 +14,11 @@
 }
 
 .selected {
-    border: 0.4rem solid #4e0eff;
+    border: 0.4rem solid #2c8ed9;
 }
 
 .submit-btn {
-    background-color: #4e0eff;
+    background-color: #2575bc;
     color: rgb(236, 236, 236);
     padding: 1rem 2rem;
     border: none;
@@ -30,6 +30,6 @@
 }
 
 .submit-btn:hover {
-    background-color: #e4def5;
-    color: black;
+    background-color: #040a42;
+    color: rgb(241, 239, 239);
 }
