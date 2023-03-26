@@ -61,7 +61,7 @@ const SignUp = () => {
                     "chat-app-user",
                     JSON.stringify(data.user)
                 );
-                navigate("/");
+                navigate("/setAvatar");
             }
         }
     };

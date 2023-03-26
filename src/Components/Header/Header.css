@@ -1,0 +1,13 @@
+.header-container{
+    background-color: rgb(180, 133, 227);
+    height: 550px;
+    border-top: 2px solid rgb(169, 61, 189);
+    border-bottom-left-radius: 60% 25%;
+    border-bottom-right-radius: 60% 25%;
+}
+.header-container img{
+    height: 400px;
+}
+.header-info{
+  
+}
