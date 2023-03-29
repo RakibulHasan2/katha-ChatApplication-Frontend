@@ -2,7 +2,7 @@ import axios from 'axios';
 import React, { useState } from 'react';
 import { toast } from 'react-hot-toast';
 import { Link, useNavigate } from 'react-router-dom';
-import logo from '../../Images/Kathā-blue logo.png'
+import logo from '../../Images/Katha-purple-mixed-blue.png'
 
 const SignUp = () => {
     const navigate = useNavigate();
@@ -69,7 +69,7 @@ const SignUp = () => {
         <>
             <div className='flex justify-center h-screen items-center bg-slate-800'>
                 <div className='border rounded-3xl bg-slate-600 px-16 py-7'>
-                    <img style={{ width: '300px', height: '200px' }} src={logo} alt="" />
+                    <img style={{ width: '200px', height: '100px' }} src={logo} alt="" />
                     <div className=''>
                         <form onSubmit={handleSubmit}>
                             <div className='mb-3'>
@@ -108,7 +108,7 @@ const SignUp = () => {
                                     onChange={(e) => handleChange(e)}
                                 />
                             </div>
-                            <button className='btn w-full bg-sky-600 border-none rounded-lg' >Submit</button>
+                            <button className='btn w-full bg-purple-600 border-none rounded-lg' >Submit</button>
                         </form>
                     </div>
                     <p className='text-center mt-4 font-bold text-white'>Already Have an account? <Link className='' to='/login'>Login</Link></p>

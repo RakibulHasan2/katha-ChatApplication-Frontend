@@ -20,10 +20,10 @@ const Navbar = () => {
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
-                    <li className='hover:bg-purple-700 hover:text-white text-purple-700 font-bold rounded-full p-2 px-3 mx-4'>Home</li>
-                    <li className='hover:bg-purple-700 hover:text-white text-purple-700 font-bold rounded-full p-2 px-3 mx-4'>About</li>
-                    <li className='hover:bg-purple-700 hover:text-white text-purple-700 font-bold rounded-full p-2 px-3 mx-4'>Service</li>
-                    <li className='hover:bg-purple-700 hover:text-white text-purple-700 font-bold rounded-full p-2 px-3'>Contact</li>
+                    <Link to={'/'}><li className='hover:bg-purple-700 hover:text-white text-purple-700 font-bold rounded-full p-2 px-3 mx-4'>Home</li></Link>
+                    <Link to={'/about'}><li className='hover:bg-purple-700 hover:text-white text-purple-700 font-bold rounded-full p-2 px-3 mx-4'>About</li></Link>
+                    <Link to={'/service'}><li className='hover:bg-purple-700 hover:text-white text-purple-700 font-bold rounded-full p-2 px-3 mx-4'>Service</li></Link>
+                   <Link to={'/contact'}> <li className='hover:bg-purple-700 hover:text-white text-purple-700 font-bold rounded-full p-2 px-3'>Contact</li></Link>
                 </ul>
             </div>
             <div className="navbar-end lg:mr-11">
